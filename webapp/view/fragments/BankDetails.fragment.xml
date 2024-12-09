@@ -5,17 +5,17 @@
         <Title text="Account Details" id="accDetails" level="H1"/>
 
         <HBox id="hBox1">
-            <Label id="bankAccNum" text="Account Holder Name:" class="sapUiSmallMarginEnd"/>
+            <Label id="bankAccNum" text="{i18n>accNum}" class="sapUiSmallMarginEnd"/>
             <Text id="accountNum" text="3456789"/>
         </HBox>
 
         <HBox id="hBox2">
-            <Label id="lblAcHolderNameID" text="Account Holder Name:" class="sapUiSmallMarginEnd"/>
+            <Label id="lblAcHolderNameID" text="{i18n>accName}" class="sapUiSmallMarginEnd"/>
             <Text id="idAcHolderNameValue" text="KSree"/>
         </HBox>
 
         <HBox id="hBox3">
-            <Label id="lblIFSCId" text="IFSC Code:" class="sapUiSmallMarginEnd"/>
+            <Label id="lblIFSCId" text="{i18n>ifscode}" class="sapUiSmallMarginEnd"/>
             <Text id="idIFSCValue" text="SBIN002345"/>
         </HBox>
         
