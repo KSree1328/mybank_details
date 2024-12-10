@@ -5,7 +5,7 @@ sap.ui.define([
 
     return Controller.extend("com.sap.mybankdetails.controller.App", {
         onInit: function () {
-            alert("This is onInit Function Block")
+            // alert("This is onInit Function Block")
             // debugger
             //Checking browser lang and setting the global resource model
             var appLang;
