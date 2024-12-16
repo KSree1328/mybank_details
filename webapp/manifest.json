@@ -14,6 +14,21 @@
             "id": "@sap/generator-fiori:basic",
             "version": "1.15.6",
             "toolsId": "e16c5a9f-e95d-4cac-a398-fc21264f2121"
+        },
+        "dataSources": {
+            "JsonModel": {
+                "uri": "model/bankdetails.json",
+                "type": "JSON"
+            }, 
+            "mainService": {
+                "uri": "/sap/opu/odata/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [],
+                    "localUri": "localService/metadata.xml",
+                    "odataVersion": "2.0"
+                }
+            }
         }
     },
     "sap.ui": {
@@ -57,6 +72,15 @@
                 "settings": {
                     "bundleName": "com.sap.mybankdetails.i18n.i18n_es"
                 }
+            },
+            "oBankDetails": {
+                "type": "sap.ui.model.json.JSONModel",
+                "dataSource": "JsonModel"
+            },
+            "": {
+                "dataSource": "mainService",
+                "preload": true,
+                "settings": {}
             }
         },
         "resources": {

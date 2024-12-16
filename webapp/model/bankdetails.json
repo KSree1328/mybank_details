@@ -1,0 +1,39 @@
+{
+    "accountDetails": {
+        "accountNum": "098765433222",
+        "Name": "Techtutsindia",
+        "Isfc": "0000002301",
+        "customerid": "12345",
+        "address": {
+            "city": "Manhattan",
+            "postalcode": "12345",
+            "housenumber": "001",
+            "street": "Wall Street",
+            "state": "New york",
+            "country": "USA"
+        }
+    },
+    "carddetails": [
+        {
+            "cardtype": "debit card",
+            "cardnumber": "0000000000001",
+            "cardcompany": "master card",
+            "assignmentdate": "assigned on 23 Aug 2017",
+            "state": true
+        },
+        {
+            "cardtype": "credit card",
+            "cardnumber": "0000000000001",
+            "cardcompany": "master card",
+            "assignmentdate": "assigned on 26 Oct 2020",
+            "state": false
+        },
+        {
+            "cardtype": "debit card",
+            "cardnumber": "0000000000001",
+            "cardcompany": "master card",
+            "assignmentdate": "assigned on 23 Aug 2017",
+            "state": true
+        }
+    ]
+}

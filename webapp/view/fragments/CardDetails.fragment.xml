@@ -1,0 +1,28 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+
+    <Panel id="pCards" expandable="true" headerText="Card Details" width="auto" class="sapUiResponsiveMargin">
+        <content>
+            <List id="myList" items="{oBankDetails>/carddetails}" width="50%">
+
+                <items>
+                    <StandardListItem id="card1" 
+                                title = "{=${oBankDetails>cardcompany}.toUpperCase()} {oBankDetails>cardnumber}"
+                                description="{=${oBankDetails>cardtype}.toUpperCase()} {oBankDetails>assignmentdate}" 
+                                icon="sap-icon://credit-card" iconInset="false" 
+                                highlight="{=${oBankDetails>state} === true ? 'Success' : 'Error' }" 
+                                info="{=${oBankDetails>state} === true ? 'Active' : 'Expired' }" 
+                                infoState="{=${oBankDetails>state} === true ? 'Success' : 'Error' }" 
+                                infoStateInverted="true" />
+
+                    <!-- <StandardListItem id="card2" 
+                                title = " Visa (1223232347298749834)" description="Credit Card: assigned on 20 Oct 2020" icon="sap-icon://credit-card" iconInset="false" highlight="Error" info="Expired" infoState="Error" infoStateInverted="true" />
+
+                    <StandardListItem id="card3" 
+                                title = "Master Card (123679847298749834)" description="Dabit Card: assigned on 23 Aug 2017" icon="sap-icon://credit-card" iconInset="false" highlight="Success" info="Active" infoState="Success" infoStateInverted="true" /> -->
+                </items>
+            </List>
+        </content>
+    </Panel>
+
+</core:FragmentDefinition>
