@@ -4,24 +4,24 @@
     <Panel id="pAccDetails" expandable="false" headerText="Account Details" width="auto" class="sapUiResponsiveMargin">
         <content>
           <HBox id="Avatar">
-            <Avatar id = "aUserProfile" src="" displaySize="XL" showBorder="true" press="onPress"/>
+            <Avatar id = "aUserProfile" src="{/profile}" displaySize="XL" showBorder="true" press="onPress"/>
 
-            <VBox id="vbox1" class="sapUiSmallMargin sapUiLargeMarginBegin">
+            <VBox id="vbox1" binding="{oBankDetails>/accountDetails}" class="sapUiSmallMargin sapUiLargeMarginBegin">
                 <!-- <Title text="Account Details" id="accDetails" level="H1"/> -->
 
                 <HBox id="hbox1">
                     <Label id="bankaccNum" text="{i18n>accNum}" class="sapUiSmallMarginEnd"/>
-                    <Text id="accountnum" text="3456789"/>
+                    <Text id="accountnum" text="{oBankDetails>accountNum}"/>
                 </HBox>
 
                 <HBox id="hbox2">
                     <Label id="lblaccHolderNameID" text="{i18n>accName}" class="sapUiSmallMarginEnd"/>
-                    <Text id="idacHolderNameValue" text="KSree"/>
+                    <Text id="idacHolderNameValue" text="{oBankDetails>Name}"/>
                 </HBox>
 
                 <HBox id="hbox3">
                     <Label id="lbliFSCId" text="{i18n>ifscode}" class="sapUiSmallMarginEnd"/>
-                    <Text id="idiFSCValue" text="SBIN002345"/>
+                    <Text id="idiFSCValue" text="{oBankDetails>Isfc}"/>
                 </HBox>
                 <Button id="openBankDetails" type="Neutral" text="{i18n>findMoreBtn}" press=".onOpenBankDetails" />
 
